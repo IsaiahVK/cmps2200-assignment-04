@@ -1,14 +1,14 @@
 # CMPS 2200 Assignment 4
 ## Answers
 
-**Name:**_________________________
+**Name:** Isaiah Kushner
 
 
 
 
 
 
-- **1a.**
+- **1a.**   In a standard binary heap, the height is $log_2n$. Therefore, it makes sense that the depth ofa $d$-ary heap is $log_dn$.
 
 
 - **1b.**
