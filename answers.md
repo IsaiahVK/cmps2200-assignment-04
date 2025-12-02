@@ -109,10 +109,20 @@ $APSP(i,j,2)=min(APSP(i,j,1), APSP(i,2,1)+APSP(2,j,1))$
 
 
 
-- **3a.**
+- **3a.**   Yes. Let $T$ be an MST. Let $e$ be the edge with the maximum weight in $T$, with weight $w(e)$.
+
+If $e$ is removed, the tree splits into Set $A$ and Set $B$.
+
+Suppose there exists a different tree, $T'$, where every edge has weight less than $w(e)$.
+
+In order for $T'$ to be valid, it must connect $A$ and $B$. Therefore, there must be an edge $e'$ that connects $A$ and $B$.
+
+Therefore, $w(e') < w(e)$. But if this were true, the algorithm would have picked this edge in the first place. 
+
+Therefore, no tree with a smaller maximum edge can exist.
 
 
-- **3b.**
+- **3b.**   Starting with the optimal MST, iterate through every edge in the graph that is currently not part of T. For each non-tree edge, imagine adding it to T and find the maximum weight edge on that cycle (excluding the one just added). Determine how much the total weight would increase if this change was made. Select the smallest increase in total weight. This would be the second most optimal tree.
 
 
-- **3c.**
+- **3c.**   $O(|E||V|)$
