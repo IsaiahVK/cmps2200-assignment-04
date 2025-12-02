@@ -97,8 +97,9 @@ APSP(2,1,2) = 0
 APSP(2,2,2) = 0
 
 
-- **2b.**
+- **2b.**   Yes. APSP(i,j,2)=APSP(i,j,1)
 
+$APSP(i,j,2)=min(APSP(i,j,1), APSP(i,2,1)+APSP(2,j,1))$
 
 - **2c.**
 
