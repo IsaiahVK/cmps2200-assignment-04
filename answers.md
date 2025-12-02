@@ -101,7 +101,7 @@ APSP(2,2,2) = 0
 
 $APSP(i,j,2)=min(APSP(i,j,1), APSP(i,2,1)+APSP(2,j,1))$
 
-- **2c.**
+- **2c.**   $APSP(i,j,k)=min(APSP(i,j,k-1),APSP(i,k,k-1)+APSP(k,j,k-1))$
 
 - **2d.**
 
