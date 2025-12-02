@@ -103,9 +103,9 @@ $APSP(i,j,2)=min(APSP(i,j,1), APSP(i,2,1)+APSP(2,j,1))$
 
 - **2c.**   $APSP(i,j,k)=min(APSP(i,j,k-1),APSP(i,k,k-1)+APSP(k,j,k-1))$
 
-- **2d.**
+- **2d.**   There are $|V| * |V| * |V|$ or $|V|^3$ subproblems. Therefore, the work is $O(|V|^3)$
 
-- **2e.**
+- **2e.**   Johnson's algorithm has a work of $O(|V|*|E|log|V|)$. Our algorithm is preferable in dense graphs where the number of edges approaches $|V|^2$, and it is easier to implement.
 
 
 
