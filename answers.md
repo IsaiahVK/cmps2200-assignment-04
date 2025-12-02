@@ -16,7 +16,13 @@
 For delete-min, the work per level is $O(d)$, while the number of levels is the same $O(log_dn)$, therefore the total work is $O(dlog_dn)$.
 
 
-- **1c.**
+- **1c.**   $Total Work = (Cost of Delete-Min * |V|) + (Cost of Decrease-Key * |E|)
+
+Delete-Min term: $O(dlog_d|V|) * |V|$
+
+Decrease-Key term: $O(log_d|V|) * |E|$
+
+Total work: $O(|V|dlog_d|V|+|E|log_d|V|)$ or $O((d|V|+|E|)log_d|V|)$
 
 - **1d.**
 
