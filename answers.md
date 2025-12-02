@@ -24,7 +24,7 @@ Decrease-Key term: $O(log_d|V|) * |E|$
 
 Total work: $O(|V|dlog_d|V|+|E|log_d|V|)$ or $O((d|V|+|E|)log_d|V|)$
 
-- **1d.**
+- **1d.**   If $d = \frac{|E|}{|V|}$, we can substitute into work $O((\frac{|E|}{|V|}|V|+|E|)log_{|E|/|V|}|V|)
 
 
 - **2a.**
