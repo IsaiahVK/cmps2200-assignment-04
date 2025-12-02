@@ -11,7 +11,9 @@
 - **1a.**   In a standard binary heap, the height is $log_2n$. Therefore, it makes sense that the depth ofa $d$-ary heap is $log_dn$.
 
 
-- **1b.**
+- **1b.**   For insert, the work per level is constant $O(1)$, and the number of levels is $O(log_dn)$, therefore the total work is $O(log_dn)$.
+
+For delete-min, the work per level is $O(d)$, while the number of levels is the same $O(log_dn)$, therefore the total work is $O(dlog_dn)$.
 
 
 - **1c.**
